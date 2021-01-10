@@ -6,7 +6,7 @@
 //  This calculation can be useful for setting time-based effects or plugins (delay,
 //  reverb, etc.) in a DAW to be in sync with a song's tempo.
 //
-//  1 measure  (Whole Note)     = 60000 / bpm   / 0.25     
+//  1 measure  (Whole Note)     = (60000 / bpm) / 0.25     
 //             (Half Note)      = (60000 / bpm) / 0.5                                                        
 //  1 beat     (Quarter Note)   = (60000 / bpm)                              
 //             (8th)            = (60000 / bpm) / 2     
