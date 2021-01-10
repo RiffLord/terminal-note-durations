@@ -26,7 +26,7 @@ const char *argp_program_version = "ms 0.6";
 const char *argp_program_bug_address = "<bruno.pezer@tutanota.com>";
 
 //  Program documentation
-static char doc[] = "This program calculates the duration of a beat or note value in milliseconds.\nThe BPM value is required for the program to run correctly and can be entered as a whole or decimal number.\nThe options below are available to calculate specific note durations for the provided BPM.\nOptions can be concatenated (eg. -ehqd), however only the last of the note-length options will be considered\nin the calculation. Use example: write \"ms 120 -ed\" to receive the duration in milliseconds of a dotted eigth note at 120BPM.\n";
+static char doc[] = "This program calculates the duration of a beat or note value in milliseconds.\nThe BPM value is required for the program to run correctly and can be entered as a whole or decimal number.\nThe options below are available to calculate specific note durations for the provided BPM.\nOptions can be concatenated (eg. -ehqd), however only the last of the note-length options will be considered\nin the calculation. Use example: write \"ms 120 -ed\" to receive the duration in milliseconds of a dotted eigth note at 120BPM.\nThis calculation can be useful for setting time-based effects (delay, reverb, etc.) or plugins in a DAW to be in sync with a song's tempo.\n";
 
 //  Description of the accepted arguments
 static char args_doc[] = "BPM";
@@ -58,7 +58,8 @@ int subdivToNote(double subdiv) {
     //  Special cases for half and whole notes
     //if (subdiv == 0.5) key = 5;
     //else if (subdiv == 0.25) key = 25;
-    else key = (int) subdiv; 
+    //else 
+    key = (int) subdiv; 
 
     switch (key) {
         case 1:
