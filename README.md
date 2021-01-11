@@ -24,7 +24,7 @@ as parameters. It then returns the result of the following calculation as a doub
 If no subdivision parameter is provided, it calculates a quarter note (or one beat) by default: 
 <br>
 <ul>
-<li>(60000 / BPM)<li>
+<li>(60000 / BPM)</li>
 </ul>
 <br>
 For shorter notes the subdivision parameter assumes values that are multiples of 2. For half and whole notes,
