@@ -39,7 +39,7 @@ For the program to be truly more useful than simply performing the calculation y
 you should add it to your <i>PATH</i> variable:
 
 <ol>
-<li>Navigate to the directory where you compiled the binary.</li>
+<li>Navigate to the directory where you compiled the binary</li>
 <li>Type <b>echo $PATH</b> in your terminal. Choose the most appropriate folder from the results to copy the program to (my recommendation is <b>/usr/local/bin</b>)</li>
 <li>Type <b>sudo cp ms [target directory]</b> to add the program to your path</li>
 </ol>
