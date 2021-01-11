@@ -14,26 +14,26 @@ this helps keep a clear mix). Although many time-based effects (especially VST p
 to sync to a track's tempo, sometimes you might want to fine tune to a specific amount for finer control.
 
 ## Implementation
-The program calculates the duration of a note length with a function that accepts a BPM value and a <i>measure subdivision</i>
+The program determines the duration of a note length with a function that accepts a BPM value and a <i>measure subdivision</i>
 as parameters. It then returns the result of the following calculation as a double value, rounded to 2 decimal points:
 
 <ul>
 <li>(60000 / BPM) / subdivision</li>
 </ul>
 
-If no subdivision parameter is provided, it calculates a quarter note (or one beat) by default: 
+If no subdivision option is provided in input it calculates a quarter note (one beat) by default: 
 <br>
 <ul>
 <li>(60000 / BPM)</li>
 </ul>
 <br>
 For shorter notes the subdivision parameter assumes values that are multiples of 2. For half and whole notes,
-subdivision assumes the value 0.5 and 0.25 respectively.
+subdivision assumes the values 0.5 and 0.25 respectively.
 
 ## Installation
 
-<b>gcc</b> is required to compile the program. After compiling, navigate to the directory where you compiled it
-and you can use the program (type <b>./ms --help</b>) to view information about the available commands.
+<b>gcc</b> is required to compile the program. Navigate to the directory where you compiled it
+and you can use the program (type <b>./ms --help</b> to view information about the available commands).
 
 For the program to be truly more useful than simply performing the calculation yourself or searching for answers online
 you should add it to your <i>PATH</i> variable:
